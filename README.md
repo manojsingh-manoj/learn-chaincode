@@ -448,3 +448,83 @@ Next, call your generic `write` function by invoking your chaincode and changing
   ![/chaincode query2 response](imgs/query2_response.PNG)
 
 That's all it takes to write basic chaincode.
+
+## Database Schema
+
+### auth.users
+| Column Name | Data Type |
+|-------------|-----------|
+| id | - |
+
+### public.roles
+| Column Name | Data Type |
+|-------------|-----------|
+| id | - |
+| name | - |
+
+### public.profiles
+| Column Name | Data Type |
+|-------------|-----------|
+| id | - |
+| full_name | - |
+| role | - |
+| phone_no | - |
+
+### public.parking_slots
+| Column Name | Data Type |
+|-------------|-----------|
+| id | - |
+| slot_name | - |
+| supplier_id | - |
+| location_latitude | - |
+| location_longitude | - |
+| price | - |
+
+### public.parking_slot_details
+| Column Name | Data Type |
+|-------------|-----------|
+| id | - |
+| parking_slot_id | - |
+| parking_slot_image | - |
+| parking_slot_remarks | - |
+
+### public.parkings
+| Column Name | Data Type |
+|-------------|-----------|
+| id | - |
+| consumer_id | - |
+| parking_slot_id | - |
+| status | - |
+| reservation_start_time | - |
+| reservation_end_time | - |
+| parking_start_time | - |
+| parking_end_time | - |
+
+### public.parking_fees
+| Column Name | Data Type |
+|-------------|-----------|
+| id | - |
+| parking_id | - |
+| fee_type | - |
+| fee_value | - |
+
+### public.consumer_payments
+| Column Name | Data Type |
+|-------------|-----------|
+| id | - |
+| consumer_id | - |
+| parking_id | - |
+| payment_type | - |
+| payment_status | - |
+| payment_value | - |
+
+### public.supplier_payment
+| Column Name | Data Type |
+|-------------|-----------|
+| id | - |
+| supplier_id | - |
+| parking_slot_id | - |
+| payment_type | - |
+| payment_status | - |
+| payment_value | - |
+
